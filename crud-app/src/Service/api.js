@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const usersUrl = 'http://localhost:3003/users';
-const usersUrl = 'https://mazher-crud-api.herokuapp.com/users';
+const usersUrl = 'https://localhost:5001/users';
 
 export const getUsers = async (id) => {
     id = id || '';
@@ -18,4 +18,3 @@ export const deleteUser = async (id) => {
 
 export const editUser = async (id, user) => {
     return await axios.put(`${usersUrl}/${id}`, user)
-}
