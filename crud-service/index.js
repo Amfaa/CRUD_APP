@@ -31,7 +31,7 @@ const URL = 'mongodb+srv://user01:MjmxfCplpsHI6zrZ@mydatabase.lojjr.mongodb.net/
             
 // const dotenv = require('dotenv'); //3 - but we need to tell express where to pick this port 
 // It allows you to seperate your crediantials when we work in a collaborative environment
-const PORT = process.env.PORT || '8080'; 
+const PORT = process.env.PORT || '5001'; 
 
 mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false }).then(() => { 
    
